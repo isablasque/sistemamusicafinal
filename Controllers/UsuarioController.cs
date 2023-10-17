@@ -21,9 +21,9 @@ namespace sistemamusicafinal.Controllers
         // GET: Usuario
         public async Task<IActionResult> Index()
         {
-              return _context.Usuario != null ? 
-                          View(await _context.Usuario.ToListAsync()) :
-                          Problem("Entity set 'Contexto.Usuario'  is null.");
+            return _context.Usuario != null ?
+                        View(await _context.Usuario.ToListAsync()) :
+                        Problem("Entity set 'Contexto.Usuario'  is null.");
         }
 
         // GET: Usuario/Details/5
@@ -149,14 +149,14 @@ namespace sistemamusicafinal.Controllers
             {
                 _context.Usuario.Remove(usuario);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool UsuarioExists(int id)
         {
-          return (_context.Usuario?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Usuario?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
