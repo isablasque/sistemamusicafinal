@@ -21,9 +21,9 @@ namespace sistemamusicafinal.Controllers
         // GET: Cantor
         public async Task<IActionResult> Index()
         {
-              return _context.Cantor != null ? 
-                          View(await _context.Cantor.ToListAsync()) :
-                          Problem("Entity set 'Contexto.Cantor'  is null.");
+            return _context.Cantor != null ?
+                        View(await _context.Cantor.ToListAsync()) :
+                        Problem("Entity set 'Contexto.Cantor'  is null.");
         }
 
         // GET: Cantor/Details/5
@@ -149,14 +149,14 @@ namespace sistemamusicafinal.Controllers
             {
                 _context.Cantor.Remove(cantor);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CantorExists(int id)
         {
-          return (_context.Cantor?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Cantor?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
