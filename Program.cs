@@ -12,7 +12,7 @@ builder.Services.AddControllersWithViews();
 /* builder.Services.AddDbContext<Contexto> //Gyuliana
     (options => options.UseSqlServer("Data Source=SP-1491016\\SQLSENAI;Initial Catalog = sistemamusicafinal;Integrated Security = True;TrustServerCertificate = True")); */
 
-/*builder.Services.AddDbContext<Contexto> //Iara
+/* builder.Services.AddDbContext<Contexto> //Iara
     (options => options.UseSqlServer("Data Source=SP-1491033\\SQLSENAI;Initial Catalog = sistemamusicafinal;Integrated Security = True;TrustServerCertificate = True")); */
 
 /*builder.Services.AddDbContext<Contexto> //Renara
