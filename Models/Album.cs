@@ -24,6 +24,7 @@ namespace sistemamusicafinal.Models
             public byte[]? CapaAlbum { get; set; }
 
             [ForeignKey("CantorId")]
+            [Display(Name = "Cantor")]
             public int CantorId { get; set; }
 
             public Cantor? Cantor { get; set; }

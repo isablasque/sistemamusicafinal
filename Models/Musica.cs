@@ -20,6 +20,7 @@ namespace sistemamusicafinal.Models
         public string DuracaoMusica { get; set; } = string.Empty;
 
         [ForeignKey("AlbumId")]
+        [Display(Name = "Álbum")]
         public int AlbumId { get; set; }
 
         public Album? Album { get; set; }

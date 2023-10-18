@@ -66,6 +66,10 @@ p {
     background-color: #7B1D65 !important;
 }
 
+a:hover {
+    color: #7B1D65 !important;
+}
+
 .detalhes {
     font-size: 20px;
     margin-left: 30%;
