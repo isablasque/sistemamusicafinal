@@ -6,34 +6,32 @@
 
 <h1>Excluir o usuário</h1>
 
-<h3>Você tem certeza de que deseja excluir isso?</h3>
+<p>Você tem certeza de que deseja excluir isso?</p>
 <div>
-    <h4>Usuario</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
+    <dl class="excluir">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.NomeUsuario)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.NomeUsuario)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.EmailUsuario)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.EmailUsuario)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.SenhaUsuario)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.SenhaUsuario)
         </dd>
-    </dl>
-    
-    <form asp-action="Delete">
+    <form asp-action="Delete" class="col-md-12">
         <input type="hidden" asp-for="Id" />
-        <input type="submit" value="Excluir" class="btn btn-danger" /> |
-        <a asp-action="Index">Voltar</a>
+        <input type="submit" value="Excluir" class="btn btn-danger" /> 
+        <a asp-action="Index" class="voltar">Voltar</a>
     </form>
+    </dl>
 </div>

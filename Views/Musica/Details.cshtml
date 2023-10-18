@@ -9,28 +9,28 @@
 <div>
     <h4>Musica</h4>
     <hr />
-    <dl class="row">
+    <dl class="detalhes col-md-10">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.TituloMusica)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.TituloMusica)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.DuracaoMusica)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.DuracaoMusica)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.Album)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Album.Id)
         </dd>
+        <dd class="col-sm-10">
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="voltar">Editar</a> |
+            <a asp-action="Index" class="voltar">Voltar</a>
+        </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
-    <a asp-action="Index">Voltar</a>
 </div>

@@ -7,36 +7,35 @@
 <h1>Detalhes do álbum</h1>
 
 <div>
-    <h4>Album</h4>
     <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
+    <dl class="detalhes col-md-4">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.TituloAlbum)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.TituloAlbum)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.GeneroAlbum)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.GeneroAlbum)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.CapaAlbum)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.CapaAlbum)
         </dd>
-        <dt class = "col-sm-2">
+        <dt class = "col-sm-10">
             @Html.DisplayNameFor(model => model.Cantor)
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Cantor.Id)
         </dd>
+        <dd class="col-sm-10">
+            <a asp-action="Edit" asp-route-id="@Model?.Id" class="voltar">Editar</a> |
+            <a asp-action="Index" class="voltar">Voltar</a>
+        </dd>
     </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
-    <a asp-action="Index">Voltar</a>
 </div>
