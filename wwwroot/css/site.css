@@ -1,18 +1,105 @@
 html {
-  font-size: 14px;
+    font-size: 14px;
+    color: #640F50;
+    font-weight: 550;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+    html {
+        font-size: 16px;
+        color: #640F50;
+        font-weight: 550;
+    }
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    color: #640F50;
+    font-weight: 550;
+}
+
+a, th {
+    color: #640F50;
+    text-decoration: none;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+    color: #640F50;
+    font-weight: 550;
+}
+.botao {
+    background-color: #B23790;
+    border: none;
+    margin-top: 5%;
+}
+
+input {
+    background-color: #B23790;
+    border: none;
+}
+.row {
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 4%;
+    width: 40%;
+    background-color: #FDE9F3;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+.voltar{
+    font-size: 18px;
+}
+p {
+    font-size: 17px;
+}
+.btn:hover {
+    background-color: #7B1D65 !important;
+}
+.detalhes {
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 4%;
+    width: 40%;
+    background-color: #FDE9F3;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+.excluir {
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 4%;
+    width: 40%;
+    background-color: #FDE9F3;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+ 
+}
+.editar {
+    font-size: 20px;
+    margin-left: 30%;
+    margin-top: 4%;
+    width: 40%;
+    background-color: #FDE9F3;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+    height: fit-content;
+}
+.menu {
+    background-color: #F6B3D4;
 }
