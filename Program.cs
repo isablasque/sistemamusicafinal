@@ -9,7 +9,7 @@ builder.Services.AddControllersWithViews();
 /* builder.Services.AddDbContext<Contexto> //Blasque
     (options => options.UseSqlServer("Data Source=SP-1491030\\SQLSENAI;Initial Catalog = sistemamusicafinal;Integrated Security = True;TrustServerCertificate = True")); */
 
-/* builder.Services.AddDbContext<Contexto> //Gyuliana
+/*builder.Services.AddDbContext<Contexto> //Gyuliana
     (options => options.UseSqlServer("Data Source=SP-1491016\\SQLSENAI;Initial Catalog = sistemamusicafinal;Integrated Security = True;TrustServerCertificate = True")); */
 
 /*builder.Services.AddDbContext<Contexto> //Iara
