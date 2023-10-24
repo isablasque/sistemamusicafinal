@@ -70,6 +70,12 @@ a:hover {
     color: #7B1D65 !important;
 }
 
+.linha {
+    background-color: #640F50;
+    height: 16px;
+    width: 100%;
+}
+
 .detalhes {
     font-size: 20px;
     margin-left: 30%;
